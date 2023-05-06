@@ -1,6 +1,6 @@
 const LightTheme = {
     text: "#23374D",
-    toggle: "#757575",
+    toggle: "#FF00FF",
     hover: "#0085FF",
     button: "#23374D",
     bgc: "#eee",
@@ -8,7 +8,7 @@ const LightTheme = {
 
 const DarkTheme = {
     text: "#eee",
-    toggle: "#0085FF",
+    toggle: "#00FFFF",
     hover: "#00D4FF",
     button: "#0085FF",
     bgc: "#23374D",
