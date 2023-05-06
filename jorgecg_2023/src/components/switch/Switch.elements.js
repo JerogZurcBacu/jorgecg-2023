@@ -7,47 +7,46 @@ export const SwitchContiner = styled.div`
 `;
 
 export const SwitchWrapper = styled.div`
-    width: 100%;
     max-width: 1300px;
     margin: auto;
-    padding-top: 1rem;
-    padding-left: 5rem;
-    diplay: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
+    padding-top: 2.5rem; 
+    padding-left: 4.5rem;
+    display: flex;
+    justify-content: space-between;
 `;
 
 export const SwitchBGC = styled.div`
     position: relative;
-    width: 50px;
-    height: 22px;
+    width: 60px;
+    height: 30px;
     border-radius: 30px;
     background-color: ${({ theme }) => theme.toggle};
     transition: 1s all ease-in;
     svg {
         position: absolute;
-        font-size: 1.4rem;
         fill: ${({ theme }) => theme.text};
     }
     #sol {
-        left: -28px;
+        left: -2.3rem;
+        font-size: 1.8rem;
     }
     #luna {
-        left: 58px;
+        left: 4.2rem;
+        font-size: 1.8rem;
     }
 `;
 
 export const ButtonSwitch = styled.button`
     position: absolute;
     cursor: pointer;
-    bottom: 3px;
-    left: ${({ position }) => (position ? "30px" : "5px")};
-    width: 16px;
-    height: 16px;
+    bottom: 4px;
+    left: ${({ position }) => (position ? "34px" : "5px")};
+    width: 22px;
+    height: 22px;
     border: none;
     border-radius: 50%;
     background-color: #fff;
     transition: 0.4s all ease-in;
     outline: none;
 `;
+

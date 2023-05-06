@@ -5,12 +5,19 @@ import {
     SwitchBGC,
     ButtonSwitch,
 } from './Switch.elements';
-import { BsSun, BsMoon } from "react-icons/bs";
+import {SocialContiner, CirculoAzulRed, CirculoRosaRed,} from '../Redes/redes';
+import { BsSun, BsMoon, BsInstagram, BsTiktok } from "react-icons/bs";
+import {RiGithubLine} from "react-icons/ri";
+import {ImLinkedin2} from "react-icons/im";
 
 const Switch = (props) => {
 
     let sol = <BsSun id="sol"/>;
-    let luna =  <BsMoon id="luna"/>
+    let luna =  <BsMoon id="luna"/>;
+    let log_git =  <RiGithubLine id="git"/>;
+    let log_link =  <ImLinkedin2 id="link"/>;
+    let log_inst =  <BsInstagram id="inst"/>;
+    let log_tik =  <BsTiktok id="tik"/>;
 
     const [position, setPosition] = useState(false);
 
@@ -40,6 +47,28 @@ const Switch = (props) => {
                         ></ButtonSwitch>
                     {luna}
                     </SwitchBGC>
+                    <SocialContiner>
+                        <a href="https://github.com/JerogZurcBacu" rel="noreferrer" target="_blank">
+                            <CirculoAzulRed>
+                                {log_git}
+                            </CirculoAzulRed>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jerogzurc/" rel="noreferrer" target="_blank">
+                        <CirculoRosaRed>
+                            {log_link}
+                        </CirculoRosaRed>
+                        </a>
+                        <a href="https://instagram.com/elsenorito_jorge" rel="noreferrer" target="_blank">
+                        <CirculoAzulRed>
+                            {log_inst}
+                        </CirculoAzulRed>
+                        </a>
+                        <a href="https://www.tiktok.com/@elsenorito_jorge" rel="noreferrer" target="_blank">
+                        <CirculoRosaRed>
+                            {log_tik}
+                        </CirculoRosaRed>
+                        </a>
+                    </SocialContiner>
                 </SwitchWrapper>
             </SwitchContiner>
         </>
