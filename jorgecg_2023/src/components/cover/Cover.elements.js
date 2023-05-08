@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bgimg from "../../imagenes/Maqueta_White1.png";
 
 export const CoverContainer = styled.div`
     width: 100%;
@@ -10,58 +11,64 @@ export const CoverContainer = styled.div`
 
 export const CoverWrapper = styled.div`
     width: 100%;
-    height: 100vh;
+    padding: 6rem 0;
     margin: auto;
     max-width: 1300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background:url(${bgimg}); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35% center;
 `;
 
 export const InfoContainer = styled.div`
-    width: 50%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 
     svg {
-        font-size: 6rem;
+        font-size: 1.5rem;
+        margin: auto;
         fill: ${({ theme }) => theme.text};
     }
 
-    h1 {
-        text-align: center;
-        width: 100%;
-        font-family: "Roboto";
-        color: ${({ theme }) => theme.text};;
-
-        &:nth-of-type(1) {
-            font-weight: 300;
-            font-size: 1.5rem;
-        }
+    p {
+        color: ${({ theme }) => theme.text};
+        margin: 0;
+        font-size: 5rem;
+        font-weight: 700;
         &:nth-of-type(2) {
-            font-weight: 700;
-            font-size: 4rem;
+            font-size: 2rem;
+            font-weight: 400;
         }
     }
-`;
+    #cgdes {
+        width: 100%;
+    }
+    ul {
+        margin: 3rem 0 0 -1.1rem;
+        list-style: none;
+        li {
+            margin-top: 1rem;
+            a {
+                text-decoration:none;
+                p {
+                    font-size: 1rem; 
+                }
+            }
+        }    
+    }
 
-export const CustomButton = styled.button`
-    margin-top: 100px;
-    color: #eee;
-    background-color: ${({ theme }) => theme.button};
-    font-family: "Roboto";
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    cursor: pointer;
-
-    &:hover {
-        background-color: ${({ theme }) => theme.hover};
-        transition: 0.4s ease-in;
+    h1 {
+        margin: 0;
+        width: 100%;
+        color: ${({ theme }) => theme.text};
+        font-weight: 700;
+        font-size: 7rem;
     }
 `;

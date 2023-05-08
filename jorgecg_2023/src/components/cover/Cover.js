@@ -3,23 +3,26 @@ import {
     CoverContainer,
     CoverWrapper,
     InfoContainer,
-    CustomButton,
 } from "./Cover.elements";
-import { BsSun, BsMoon } from "react-icons/bs";
+import cgdes from "../../imagenes/cgdes.png";
+import cgdes_b from "../../imagenes/cgdes_b.png";
 
 const Cover = (props) => {
-    let icono = props.theme === 'light' ? <BsSun /> : <BsMoon />
-    let leyenda = props.theme === 'light' ? <h1>Light Mode</h1> : <h1>Dark Mode</h1>
 
     return (
         <>
             <CoverContainer>
                 <CoverWrapper>
                     <InfoContainer>
-                        {icono}
-                        <h1>Hello, I'm in</h1>
-                        {leyenda}
-                        <CustomButton>Get Started</CustomButton>
+                        <p>Hola mundo!,</p>
+                        <p>yo soy...</p>
+                        <h1>Jorge</h1>
+                        <img src= {props.theme === 'light' ? cgdes : cgdes_b} alt="Desarrollador Web" id="cgdes" />
+                        <ul>
+                            <li><a href="#proyectos" ><p>Proyectos -&gt;</p></a></li>
+                            <li><a href="#sobremi" ><p>Sobre mi / Servicios -&gt;</p></a></li>
+                            <li><a href="#contacto" ><p>Contacto -&gt;</p></a></li>
+                        </ul>
                     </InfoContainer>
                 </CoverWrapper>
             </CoverContainer>
