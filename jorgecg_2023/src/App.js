@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cover, Themes, Switch } from './components';
+import { Cover, Themes, Switch, Proyectos } from './components';
 import { ThemeProvider } from 'styled-components';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <ThemeProvider theme={Themes[theme]}>
         <Switch theme={theme} setTheme={setTheme} />
         <Cover theme={theme} />
+        <Proyectos theme={theme} />
       </ThemeProvider>
     </>
   );

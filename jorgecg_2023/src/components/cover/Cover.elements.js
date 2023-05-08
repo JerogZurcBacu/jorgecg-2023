@@ -3,7 +3,6 @@ import bgimg from "../../imagenes/Maqueta_White1.png";
 
 export const CoverContainer = styled.div`
     width: 100%;
-    height: 100vh;
     justify-content: center;
     background-color: ${({ theme }) => theme.bgc};
     transition: 0.5s all ease-in;
@@ -11,7 +10,7 @@ export const CoverContainer = styled.div`
 
 export const CoverWrapper = styled.div`
     width: 100%;
-    padding: 6rem 0;
+    padding: 6rem 0 0 0 ;
     margin: auto;
     max-width: 1300px;
     display: flex;
@@ -30,6 +29,13 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    #subtitulo {
+        font-size: 12rem;
+        width: 300px;
+        margin: 0;
+        line-height: 11rem;
+    }
 
     svg {
         font-size: 1.5rem;
