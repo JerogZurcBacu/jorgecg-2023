@@ -4,7 +4,11 @@ import {
     CoverWrapper,
     InfoContainer,
 } from "../cover/Cover.elements";
-import {ProyContainer,ProyImgContainer,ProyTxtContainer,} from "./proyectos.elements";
+import {ProyContainer,
+        ProyImgContainer,
+        ProyTxtContainer,
+} from "./proyectos.elements";
+import ejproy from "../../imagenes/Ej_proyectos_img.png";
 
 const Proyectos = (props) => {
     return (
@@ -14,14 +18,54 @@ const Proyectos = (props) => {
                     <InfoContainer>
                         <h2 id="subtitulo">Pro<br />yec<br />tos</h2>
                         <ProyContainer>
-                            <ProyImgContainer>
-                                <img src="" alt="Proyecto" />
-                                <ProyTxtContainer>
-                                    <h3>Proyecto 3</h3>
-                                    <p>lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.</p>
-                                    <a href="www.google.com" rel="noreferrer" target="_blank">Ver mas -&gt;</a>
-                                </ProyTxtContainer>
+                            <ProyImgContainer className="izq">
+                                <img src={ejproy} alt="Proyecto" />
                             </ProyImgContainer>
+                            <ProyTxtContainer>
+                                <h3>Proyecto 3</h3>
+                                <p className="texto_proy">lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.</p>
+                                <a href="www.google.com" rel="noreferrer" target="_blank">Ver mas -&gt;</a>
+                            </ProyTxtContainer>
+                        </ProyContainer>
+                        <ProyContainer>
+                            <ProyImgContainer className="der">
+                                <img src={ejproy} alt="Proyecto" />
+                            </ProyImgContainer>
+                            <ProyTxtContainer>
+                                <h3>Proyecto 3</h3>
+                                <p className="texto_proy">lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.</p>
+                                <a href="www.google.com" rel="noreferrer" target="_blank">Ver mas -&gt;</a>
+                            </ProyTxtContainer>
+                        </ProyContainer>
+                        <ProyContainer>
+                            <ProyImgContainer className="izq">
+                                <img src={ejproy} alt="Proyecto" />
+                            </ProyImgContainer>
+                            <ProyTxtContainer>
+                                <h3>Proyecto 3</h3>
+                                <p className="texto_proy">lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.</p>
+                                <a href="www.google.com" rel="noreferrer" target="_blank">Ver mas -&gt;</a>
+                            </ProyTxtContainer>
+                        </ProyContainer>
+                        <ProyContainer>
+                            <ProyImgContainer className="der">
+                                <img src={ejproy} alt="Proyecto" />
+                            </ProyImgContainer>
+                            <ProyTxtContainer>
+                                <h3>Proyecto 3</h3>
+                                <p className="texto_proy">lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.</p>
+                                <a href="www.google.com" rel="noreferrer" target="_blank">Ver mas -&gt;</a>
+                            </ProyTxtContainer>
+                        </ProyContainer>
+                        <ProyContainer>
+                            <ProyImgContainer className="izq">
+                                <img src={ejproy} alt="Proyecto" />
+                            </ProyImgContainer>
+                            <ProyTxtContainer>
+                                <h3>Proyecto 3</h3>
+                                <p className="texto_proy">lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.lorem ipsum dolor sit amet, consectetur asipiscing elit.</p>
+                                <a href="www.google.com" rel="noreferrer" target="_blank">Ver mas -&gt;</a>
+                            </ProyTxtContainer>
                         </ProyContainer>
                     </InfoContainer>
                 </CoverWrapper>

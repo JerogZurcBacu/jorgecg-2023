@@ -29,12 +29,12 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-
     #subtitulo {
         font-size: 12rem;
         width: 300px;
         margin: 0;
         line-height: 11rem;
+        color: ${({ theme }) => theme.text};
     }
 
     svg {
