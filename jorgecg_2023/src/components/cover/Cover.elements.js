@@ -43,6 +43,9 @@ export const InfoContainer = styled.div`
     #bioserv_title {
         font-size: 11rem;
     }
+    #contacto_title {
+        font-size: 11rem;
+    }
     svg {
         font-size: 1.5rem;
         margin: auto;

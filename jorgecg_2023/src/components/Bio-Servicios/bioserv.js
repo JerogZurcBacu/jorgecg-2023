@@ -59,7 +59,7 @@ const Bioserv = (props) => {
                                 <Biodescarga>
                                     <img src={papeles} alt="papeles" id="papeles"/>
                                     <Bioboton>
-                                        <p>Descargar</p>
+                                        <p id="boton_txt">Descargar</p>
                                     </Bioboton>
                                 </Biodescarga>
                             </BioInfo>    

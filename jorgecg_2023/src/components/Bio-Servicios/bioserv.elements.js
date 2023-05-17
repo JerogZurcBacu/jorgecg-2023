@@ -66,7 +66,7 @@ export const Bioboton = styled.div`
     background-color: #00FFFF;
     display: flex;
     justify-content: center;
-    p {
+    #boton_txt {
         font-size: 2.5rem;
     }
 `;

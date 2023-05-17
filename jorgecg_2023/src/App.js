@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cover, Themes, Switch, Proyectos, Bioserv} from './components';
+import { Cover, Themes, Switch, Proyectos, Bioserv, Contacto} from './components';
 import { ThemeProvider } from 'styled-components';
 
 function App() {
@@ -12,6 +12,8 @@ function App() {
         <Cover theme={theme} />
         <Proyectos theme={theme} id="proyectos"/>
         <Bioserv theme={theme} id="bioserv"/>
+        {/* <Arena theme={theme} id="arena"/> */}
+        <Contacto theme={theme} id="contacto"/>
       </ThemeProvider>
     </>
   );
