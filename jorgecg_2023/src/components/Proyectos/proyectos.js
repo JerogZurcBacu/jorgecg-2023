@@ -16,7 +16,7 @@ const Proyectos = (props) => {
             <CoverContainer>
                 <CoverWrapper>
                     <InfoContainer>
-                        <h2 id="subtitulo">Pro<br />yec<br />tos</h2>
+                        <h2 id="subtitulo" className="subtitulos">Pro<br />yec<br />tos</h2>
                         <ProyContainer>
                             <ProyImgContainer className="izq">
                                 <img src={ejproy} alt="Proyecto" />

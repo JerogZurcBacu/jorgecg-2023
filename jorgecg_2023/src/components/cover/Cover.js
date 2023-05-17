@@ -15,7 +15,7 @@ const Cover = (props) => {
                 <CoverWrapper>
                     <InfoContainer>
                         <p>Hola mundo!,</p>
-                        <p>yo soy...</p>
+                        <p id="yo">yo soy...</p>
                         <h1>Jorge</h1>
                         <img src= {props.theme === 'light' ? cgdes : cgdes_b} alt="Desarrollador Web" id="cgdes" />
                         <ul>

@@ -29,14 +29,20 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    #subtitulo {
+    .subtitulos {
         font-size: 12rem;
         width: 300px;
         margin: 0;
         line-height: 11rem;
         color: ${({ theme }) => theme.text};
     }
-
+    .span_contorno {
+        -webkit-text-stroke: 2px ${({ theme }) => theme.text};
+        color: transparent;
+    }
+    #bioserv_title {
+        font-size: 11rem;
+    }
     svg {
         font-size: 1.5rem;
         margin: auto;
@@ -48,10 +54,10 @@ export const InfoContainer = styled.div`
         margin: 0;
         font-size: 5rem;
         font-weight: 700;
-        &:nth-of-type(2) {
-            font-size: 2rem;
-            font-weight: 400;
-        }
+    }
+    #yo {
+        font-size: 2rem;
+        font-weight: 400;
     }
     #cgdes {
         width: 100%;
