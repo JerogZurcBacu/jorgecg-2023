@@ -70,7 +70,7 @@ const Bioserv = (props) => {
                                 <Biodescarga>
                                     <img src={papeles} alt="papeles" id="papeles"/>
                                     <Bioboton>
-                                    <a href="jorgecg_2023\src\imagenes\CV_JorgeCG.pdf">
+                                    <a href="https://github.com/JerogZurcBacu/jorgecg-2023/raw/main/jorgecg_2023/src/imagenes/CV_JorgeCG.pdf">
                                         <p id="boton_txt">Descargar</p>
                                         </a>
                                     </Bioboton>
