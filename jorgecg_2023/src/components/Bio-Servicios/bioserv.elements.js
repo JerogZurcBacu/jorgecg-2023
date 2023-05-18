@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import cara from "../../imagenes/cara.png";
 
 export const BioContainer = styled.div`
     width: 100%;
@@ -8,13 +9,24 @@ export const BioContainer = styled.div`
     justify-content: center;
     .sub_secundario {
         font-size: 1.8rem;
+        @media (min-width: 700px) {
+            width: 55%;
+            font-size: 3rem;
+          }
     }
     #proximamente_img {
         width: 40%;
-        margin: -70px auto 0 auto; 
+        margin: -70px auto 0 auto;
+        @media (min-width: 700px) {
+            width: 20%;
+            margin: -100px auto 0 180px;
+          } 
     }
     #papeles {
         width: 85%;
+        @media (min-width: 700px) {
+            width: 55%;
+          }
     }
 `;
 
@@ -24,14 +36,22 @@ export const BioInfo = styled.div`
         margin: 15px auto;
         font-size: 1.1rem;
     }
+    @media (min-width: 700px) {
+        #descrpcion1,#descrpcion2 {
+            width: 50%;
+            margin-left: 0;
+        }
+      }
+    
 `;
 
 export const Bioservicios = styled.div`
     width: 100%;
-    height: 800px;
-    margin-bottom: 65px;
     display: flex;
     flex-wrap: wrap;
+    @media (min-width: 700px) {
+        justify-content: space-around;
+      }
 `;
 export const Bioservsub = styled.div`
     width: 150px;
@@ -50,6 +70,9 @@ export const Bioservsub = styled.div`
     #serv_txt {
         font-size: 1.1rem;
     }
+    @media (min-width: 700px) {
+        width: 20%;
+      }
 `;
 
 export const Biodescarga = styled.div`
@@ -57,6 +80,14 @@ export const Biodescarga = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 700px) {
+        width: 50%;
+        flex-direction: row;
+        #papeles {
+            width: 50%;
+            margin: 0 25px;
+        }
+      }
 `;
 export const Bioboton = styled.div`
     width: 80%;
@@ -69,4 +100,27 @@ export const Bioboton = styled.div`
     #boton_txt {
         font-size: 2.5rem;
     }
+    a {
+        text-decoration:none;
+    }
+    @media (min-width: 700px) {
+        width: 60%;
+      }
+`;
+export const BioCara = styled.div`
+    display: none;
+    @media (min-width: 700px) {
+        position: absolute;
+        top: 3200px;
+        right: 0;
+        width: 300px;
+        height: 800px;
+        border-radius: 500px 0 0 500px;
+        background-color: green;
+        background:url(${cara}); 
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+
+      }
 `;

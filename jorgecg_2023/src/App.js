@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cover, Themes, Switch, Proyectos, Bioserv, Contacto} from './components';
+import { Cover, Themes, Switch, Proyectos, Bioserv, Contacto, Piepag} from './components';
 import { ThemeProvider } from 'styled-components';
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
         <Bioserv theme={theme} id="bioserv"/>
         {/* <Arena theme={theme} id="arena"/> */}
         <Contacto theme={theme} id="contacto"/>
+        <Piepag theme={theme} id="pie_de_pagina" />
       </ThemeProvider>
     </>
   );

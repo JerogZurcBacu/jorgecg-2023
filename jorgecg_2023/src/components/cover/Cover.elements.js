@@ -21,6 +21,9 @@ export const CoverWrapper = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 35% center;
+    @media (min-width: 700px) {
+        background-size: contain; 
+    }
 `;
 
 export const InfoContainer = styled.div`
@@ -29,12 +32,16 @@ export const InfoContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    word-wrap: break-word;
     .subtitulos {
+        width: 100%;
         font-size: 12rem;
-        width: 300px;
         margin: 0;
         line-height: 11rem;
         color: ${({ theme }) => theme.text};
+        @media (min-width: 700px) {
+            font-size: 14rem;
+          }
     }
     .span_contorno {
         -webkit-text-stroke: 2px ${({ theme }) => theme.text};
@@ -55,15 +62,15 @@ export const InfoContainer = styled.div`
     p {
         color: ${({ theme }) => theme.text};
         margin: 0;
-        font-size: 5rem;
+        font-size: 5.8rem;
         font-weight: 700;
+    }
+    #holamundo {
+        width: 100%;
     }
     #yo {
         font-size: 2rem;
         font-weight: 400;
-    }
-    #cgdes {
-        width: 100%;
     }
     ul {
         margin: 3rem 0 0 -1.1rem;
@@ -85,5 +92,24 @@ export const InfoContainer = styled.div`
         color: ${({ theme }) => theme.text};
         font-weight: 700;
         font-size: 7rem;
+    }
+`;
+
+export const NombreContainer = styled.div `
+    widht: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+        width: 100%;
+        @media (min-width: 700px) {
+            font-size: 9rem;
+            width: auto;
+          }
+    }
+    #cgdes {
+        width: 100%;
+        @media (min-width: 700px) {
+            width: 60%;
+          }
     }
 `;

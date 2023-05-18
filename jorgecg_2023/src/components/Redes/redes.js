@@ -6,7 +6,7 @@ export const SocialContiner = styled.div`
     display: flex;
     justify-content: flex-end;
     a {
-        margin-left: 10px; 
+        margin-left: 10px;
     }
     svg {
         font-size: 1.4rem;

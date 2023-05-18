@@ -9,6 +9,7 @@ export const ContContainer = styled.div`
         widht: 100%;
         font-size: 3rem;
         margin: 1.8rem auto;
+        color: ${({ theme }) => theme.text};
     }
     .info_txt {
         font-size: 1.1rem;
@@ -19,12 +20,12 @@ export const ContContainer = styled.div`
         justify-content: center;
         svg {
             font-size: 3rem;
+            fill: #23374D;
         }
         div {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             border-radius: 30%;
-
         }
     }
 `;
@@ -39,5 +40,13 @@ export const Bioboton = styled.div`
     #boton_txt {
         font-size: 1rem;
         margin: auto;
+        color: #23374D;
+    }
+    a {
+        text-decoration:none;
+        color: #23374D;
+    }
+    @media (min-width: 700px) {
+        width: 25%; 
     }
 `;

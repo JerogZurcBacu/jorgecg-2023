@@ -5,6 +5,8 @@ import bgimg_der from "../../imagenes/bg_proyectos_img_2.png";
 export const ProyContainer = styled.div`
     width: 100%;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     h3 {
         font-size: 3rem;
@@ -15,12 +17,26 @@ export const ProyContainer = styled.div`
         background:url(${bgimg_izq});
         background-repeat: no-repeat;
         background-size: cover;
+        @media (min-width: 700px) {
+            background-size: contain;
+        }
     }
     .der {
         background:url(${bgimg_der});
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
+        @media (min-width: 700px) {
+            background-size: contain;
+        }
+    }
+    @media (min-width: 700px) {
+        width:100%;
+        margin-top: 20vh;
+        flex-direction: row;
+        &:nth-of-type(2n) {
+            flex-direction: row-reverse;
+        }
     }
 `;
 
@@ -32,8 +48,16 @@ export const ProyImgContainer = styled.div`
     align-items: center; 
     img {
         width: 80%;
-        margin: auto; 
+        margin: auto;
+        @media (min-width: 700px) {
+            width: 75%;
+          }
     }
+    @media (min-width: 700px) {
+        height: 50vh;
+        width: 45%;
+      }
+
 `;
 
 export const ProyTxtContainer = styled.div`
@@ -49,4 +73,7 @@ export const ProyTxtContainer = styled.div`
         text-decoration: none; 
         color: ${({ theme }) => theme.text};
     }
+    @media (min-width: 700px) {
+        width: 45%;
+      }
 `;
